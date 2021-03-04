@@ -1,0 +1,350 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+	font-family: $main-font
+	font-weight: 500 
+	color: #000
+.container-fluid 
+	width: 1260px
+	max-width: 90vw
+h1 
+	font-size: 3.646vw
+	font-family: $primary-font
+	font-weight: 900
+	line-height: 1
+	margin-bottom: 0
+	color: #fff
+
+h2 
+	font-size: 3.646vw
+	font-family: $primary-font 
+	font-weight: 900
+a,
+a:hover 
+	text-decoration: none
+//end global style
+
+//start header style
+.header 
+	background: $main-color
+	min-height: 7.135vw
+	padding: 0.260vw 0
+	display: flex 
+	align-items: center
+
+.logo 
+	font-size: 4.167vw
+	font-family: $primary-font 
+	font-weight: 900
+	a
+		color: #fff
+		text-decoration: none
+	img 
+		width: 21.823vw
+//end header style
+
+//start main-screen
+.main-screen 
+	max-height: 100vh
+	height: 57.292vw
+	background: url('../img/main-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: top right
+	h1 
+		padding-top: 13.177vw
+.main-screen__text
+	font-size: 2.604vw
+	margin-top: 1.979vw
+	color: #fff
+.main-screen__button 
+	width: 28.594vw
+	height: 3.906vw
+	background: $primary-color
+	display: flex 
+	justify-content: center 
+	align-items: center
+	margin-top: 4.010vw
+	border-radius: 0.781vw
+	font-size: 1.563vw 
+	font-weight: 700
+	color: #fff
+.main-screen__button:hover 
+	color: #fff
+//end main-screen
+
+//start item section
+.item-section 
+	padding-bottom: 1.563vw
+	.container-fluid 
+		transform: translateY(-3.125vw)
+.line 
+	width: 100% 
+	height: 7.135vw
+	background: $main-color
+.item 
+	padding: 2.344vw 1.719vw
+	min-height: 41.354vw
+	width: 100% 
+	box-shadow: 0px 3px 6px #00000029
+	border-radius: 0.677vw
+	background: #fff
+	display: flex 
+	flex-direction: column 
+	align-items: center
+	p 
+		font-size: 1.042vw
+		font-size: clamp(18px, 1.042vw, 1.042vw)
+
+		line-height: 1.8
+		font-weight: 300
+
+.item-img
+	height: 3.490vw
+	display: flex 
+	align-items: center 
+	justify-content: center
+	margin-bottom: 1.302vw
+	img 
+		max-width: 3.125vw
+.item-title 
+	font-size: clamp(16px, 1.823vw, 1.823vw)
+	font-weight: 700
+	margin-bottom: 3.802vw
+//end item section
+
+//start advatages style
+.advantages
+	padding-top: 4.323vw
+	padding-bottom: 4.688vw
+	min-height: 46.875vw
+	background: linear-gradient(180deg, #43ADE2 0%, #C52033 0%, #FFFFFF 100%)
+	position: relative
+	h2 
+		text-align: center
+		color: #000
+	.container-fluid 
+		position: relative 
+		z-index: 1
+.advantages-bg-img
+	position: absolute 
+	right: 0
+	overflow: hidden
+	bottom: 0
+	z-index: 0
+	img 
+		width: 42.240vw 
+		transform: translateX(7%)
+.advantages__photo
+	display: block
+	max-width: 70.208vw
+	margin: 0 auto
+.advantages__content
+	max-width: 52.083vw
+	margin: 0 auto
+	padding-top: 3.802vw
+	font-size: clamp(14px, 1.302vw, 1.302vw)
+	color: #717171
+.advantages__item
+	display: flex
+	align-items: center
+	margin-bottom: 1.563vw
+	
+	img 
+		margin-right: 1.302vw
+		width: 1.990vw
+.advantages__sub-title
+	font-size: 2.083vw
+	margin-bottom: 1.6vw
+	color: $primary-color
+	font-weight: 700
+.advantages__content
+	display: flex 
+	justify-content: space-between
+.tarif-item 
+	margin-bottom: 1.042vw
+.advantages__button-wrapper
+	display: flex 
+	justify-content: center
+	margin-top: 3.438vw
+.advantages__button
+	display: flex 
+	justify-content: center 
+	align-items: center
+	background: $primary-color
+	color: #fff
+	width: 31.094vw
+	height: 3.906vw
+	border-radius: 0.781vw
+	font-size: clamp(14px, 1.563vw, 1.563vw)
+	font-weight: 700
+	box-shadow: 0px 3px 6px #00000029
+.advantages__button:hover 
+	color: #fff
+//end advantage stle
+
+//start social section
+.social-section
+	background: #E29E8F
+	padding: 4.167vw 0
+	.container-fluid 
+		max-width: 62vw
+	h2 
+		color: #fff
+		padding-left: 3vw
+.social-section__icon-wrapper
+	width: 5.729vw
+	height: 5.729vw
+	border-radius: 50%
+	background: $primary-color
+	display: flex 
+	justify-content: center 
+	align-items: center
+	img  	
+		max-width: 2.760vw
+		max-height: 2.760vw
+.social-item
+	display: flex 
+	flex-direction: column
+	align-items: center
+	text-align: center
+.social-section__list
+	margin-top: 3.125vw
+.social__value
+	color: #fff 
+	font-family: $primary-font
+	font-weight: 900
+	font-size: 3.125vw
+	margin-top: 1.5vw
+	line-height: 1
+.social__text
+	color: $primary-color
+	font-size: 1.563vw
+	line-height: 1
+	font-family: $primary-font
+	font-weight: 900
+//end social section
+
+//start specialists section
+.specialists
+	padding-top: 6.875vw
+	padding-bottom: 7.396vw
+	font-size: clamp(14px, 1.302vw, 1.302vw)
+	.row 
+		width: 57.292vw
+		margin: 0 auto
+	img 
+		width: 22.083vw
+	h2 
+		font-size: 3.125vw
+		color: #192E4C
+		margin-bottom: 3vw
+	.col-md-7 
+		display: flex
+		flex-direction: column
+		justify-content: center
+	p 
+		font-weight: 300
+		
+		max-width: 31.771vw
+.specialists__contact-info-title
+	font-weight: 700
+.specialists__contact-info-text
+	font-weight: 300
+.specialists__contact-info
+	margin-top: 2.969vw
+	margin-bottom: 5.5vw
+.specialists__button
+	background: $primary-color
+	display: flex
+	justify-content: center 
+	align-items: center
+	color: #fff
+	width: 28.594vw
+	height: 3.906vw
+	border-radius: 0.781vw
+	font-size: clamp(14px, 1.563vw, 1.563vw) 
+	font-weight: 700
+.specialists__button:hover 
+	color: #fff
+.specialist__name
+	font-size: clamp(14px, 1.250vw, 1.250vw)
+	margin-top: 1.302vw
+.specialist__position
+	font-size: clamp(14px, 1.250vw, 1.250vw)
+	font-weight: 300
+//end specialists section
+
+//start contact
+.contact 
+	min-height: 67.031vw
+	background: url('../img/contact-bg.png')
+	background-size: cover
+	background-position: top left -25vw
+	padding-top: 11.563vw
+	.container-fluid 
+		width: 86.979vw
+	h2 
+		color: #08102F
+.contact-form__wrapper
+	display: flex 
+	padding-top: 5.417vw
+.form 
+	width: 34.167vw
+	margin-left: 8.333vw
+
+input 
+	width: 100%
+	height: 3.854vw
+	margin-bottom: 2.188vw
+	border: none 
+	outline: none
+	padding: 0 1.771vw
+	font-size: clamp(14px, 1.563vw, 1.563vw) 
+	font-weight: 300
+input:focus::placeholder 
+	color: transparent
+.submit-button
+	margin: 0 auto
+	display: flex
+	border: none
+	background: $primary-color
+	color: #fff
+	width: 28.594vw
+	height: 3.906vw
+	border-radius: 0.781vw
+	font-size: clamp(14px, 1.563vw, 1.563vw) 
+	font-weight: 700
+	justify-content: center 
+	align-items: center
+	cursor: pointer
+//end contact 
+
+//start footer style
+.footer 
+	background: $footer-color
+	color: #fff
+	padding-top: 3.333vw
+	padding-bottom: 4.115vw
+	font-size: clamp(14px, 1.250vw, 1.250vw)
+	font-family: "Roboto", sans-serif
+	font-weight: 400
+.footer__text
+	margin-bottom: 2.344vw
+.footer-social
+	display: flex 
+	align-items: flex-end
+	a 
+		display:block 
+		margin-right: 2.083vw
+		img 
+			max-width: 3.385vw
+			max-height: 3.385vw
+//end footer style
+
+@import "media"
+
+
+
